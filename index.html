@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapStone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 
 <body>
     <div class="header">
-        <h3 class="header-name">Portfolio</h3>
+        <a class="header-name" href="#">Portfolio</a>
+        <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+        <label for="hamburger-toggle" class="hamburger">☰</label>
         <div class="header-side">
             <a class="header-side-name" href="#">Home</a>
-            <a class="header-side-name" href="#">Projects</a>
-            <a class="header-side-name" href="#">About</a>
-            <a class="header-side-name" href="#">Contact</a>
+            <a class="header-side-name" href="#projects">Projects</a>
+            <a class="header-side-name" href="#about">About</a>
+            <a class="header-side-name" href="#contact">Contact</a>
         </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" height="2" viewBox="0 0 1440 2" fill="none" preserveAspectRatio="none"
+        class="header-divider">
+        <path d="M-32 1H1472" stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+    </svg>
+
     <div class="content">
         <div class="content1">
             <div class="content1-top">
@@ -28,10 +40,8 @@
                 <img class="content1-img"
                     src="https://s3-alpha-sig.figma.com/img/ed3e/ba04/f2fb7e8d38cecd00a203ec9c59205293?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QZdSlk525FbDTW3Zbu-0GwfUmN5rgAqykHdgbPJsyYggxpTTchC23llTMNikrPS1HWQPyYiQNSCY5CBf9RvMIj4V7dF51UNmthiGAKSDr6EZ34v8zOii8KbOgkUSFybh6G~-vu-iEU-7NqNZcaIcmR2CGOzjHTUuNi7EYuN4aa-PeXJn9ksFaw8tDpcyzgLs42yWTjnEdsDtQzVBhTjQxGV1Qz1-qBBirqMFoyb9KL4rT~-rZQCJ87HYIcKq0ZgVc1K9y4m5b1ZwKH-GrMGVf68cu7sSknousT2z08Pb2shnlrBDsNCBUEp6be6dp2ul-1iOF28SgwGDOQtWCvsd7Q__">
             </div>
-            <br><br>
         </div>
-        <br><br><br>
-        <div class="content2">
+        <div class="content2" id="projects">
             <div class="project">
                 <img class="project-img"
                     src="https://s3-alpha-sig.figma.com/img/1a0a/cfcf/4eb0849ee0826141c6d8eea6fd873169?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X9HB~Gc3vu-HTv4OAhLpVdQTUQvKJ19peKT8Qc4Dh~-SVrltH0jwbLEqaNwDCBolZmq4N0DNv60zKic-bQli4~cBHpefnh~vE0i5FfXcYPhYQwfffNpkoZwQm2CyCrOpkd8VwL02kJB9lgTCU~fuSTnlvr5lz1n-gUZ9g6ACWVGAUr~vKHv3M4NWuyjrUDXeF1HDy1h3lm2laty-IHNSaLaCSpgLZX13Dduz8KApntGiUFNgb~IEGGJ9HOm-DkF2p3t2qyz3qdFnWI32JSs115UMc8cV~NvqUTVkvHBlXqMexNvZRsWmb4iZyoX~yQJ-EIk8Bm93Xn5uc7z7Vi~btg__">
@@ -105,7 +115,246 @@
                 </div>
             </div>
         </div>
+        <div class="content3">
+            <div class="gap"></div>
+            <div class="content3-text" id="about">I am a professional designer with a passion for creating visually
+                stunning and
+                user-friendly designs. My work spans across various fields, including web design, app design, graphic
+                design, UX/UI design, branding, illustration, photography, animation, and motion graphics.</div>
+        </div>
+        <div class="project-highlights">
+            <div class="heading">Project Highlights</div>
+            <div class="projects-container">
+                <div class="p1">
+                    <div class="head">Design</div>
+                    <div class="names">Web Design</div>
+                    <div class="names">App Design</div>
+                </div>
+                <div class="p2">
+                    <div class="head">Team</div>
+                    <div class="names">Alice Johnson</div>
+                    <div class="names">Bob Smith</div>
+                </div>
+                <div class="p3">
+                    <div class="head">Date</div>
+                    <div class="names">January 2023</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="impact-metrics">
+            <div class="text">Impact Metrics</div>
+            <div class="metrics-container">
+                <div class="row">
+                    <div class="stat">
+                        <div class="head-text">100+</div>
+                        <div class="desc-text">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="head-text">50+</div>
+                        <div class="desc-text">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="stat">
+                        <div class="head-text">20</div>
+                        <div class="desc-text">Awards Won</div>
+                    </div>
+                    <div class="stat">
+                        <div class="head-text">10</div>
+                        <div class="desc-text">Years of Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-heading">What My Clients Say</div>
+            <div class="testimonial-cards">
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/8a0a/faac/c2132c39d21b8f997b82b8de71d1b205?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MF~K3goEcemiLA6MjiMezfUj6KboZve70qNokcUTHhCFDYFQjGnaNSP-IKfo07qIPkDRoA1ewBrWlhS1XYs5CuhI3owScd8ohNMsTpHhrYBnt6EBzPYg223IXNsHeU66Fhiq1Vgss87t~6nxiIlcZu-fnU4LTJtcM82ExXfMPAzHOQ2cpjlYniRcQkDsp2~q3Rko4d4xkOw4cQapiBdDHu7YsLScODUo6pssuTMO5Sex-hfK~0JYOK7O5-OVusBo5K3jaxA-EgodjEJLM2qYX23J1awT2w7DT3IO3C3HKjD4AVBU3I3yEffD50iZcPK5Zdn3N2tmhlZtkVfnxbCZFg__"
+                                alt="" class="profile-img1">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Chris Evans</div>
+                            <div class="position">CEO, TechCorp</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">Amazing work! Highly recommend.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/c82b/426f/c99314c6fa089a9ac552c9b3c2253e0e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=odHiPBPY6kdVgS3w92tFgf4WPsQYCzGicbYXrEo~gGr9zo377WAbkbz~q6GFuWQmzVLVkt~L0q-scYNsGrmSryv7tLu2luaubAjufWGiivBZT2JN17b4h80SOAtwTQFeFT1~y911fD~yy3APOSAFN8-gpx6889y2skXZgFbvgdH8obEfGMWG~rfx49qCYB~0GmTNd1Rk1tP2ZPSpjC-qfX1zatlBlWHVZC5cmWHBP6Jn6TXfzRxtTlaATp040PixZZLT~pkrXrrK9BrKU8HPRrUqBBVQHiUaGFUayEfWZutyyXWuHeQ9DL1kWuVGzobDx0ASnk2tTDH9aa~elZAb3w__"
+                                alt="" class="profile-img2">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Natalie Portman</div>
+                            <div class="position">Creative Director, DesignStudio</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">Professional and creative.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/7f2d/5be5/7625491d2bb6b0a7e520b7d63dbfebb8?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iXs4IL3BD7fQ0jXtWoQ7p1lPi4RaODexxt54NWBeG28p2Py0BFgm7uNCWP1FPjt6vrPxVwn5ebvBiDRwtrbhBBiol01fH3X3vxgj1n6INTPOHLNOeS9alWTAHy~GN94VDhOkt7JxkLmahM~DPPpWoCs7KlZgtVdPD6ALoABeC04TWCORU2i1K0lDgCGkbZ~-vvGJtobNPZX9hV26gXAg0~enbKeQuiKPqkA3dDjINmbWkhleVA~diXD3iU-Z0S9LNjImii9zt3A-6H56QE2aQkxW6eBfXjBRxzBh7kKii2lhSydP94T6Itq1TxJaEz5IwWxN8vrm~6I1KkiXP8Lkmg__"
+                                alt="" class="profile-img3">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Robert Downey Jr.</div>
+                            <div class="position">Founder, Innovate Inc.</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">Exceeded our expectations.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/2d6d/4b40/990d38db18a50d802f01aa805cd59ad1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L5UohdzHRpamXSk1v9OBUDUjm7rgt5Dd0rm0484JC9pU8ZCi7b600o0eZS6KE6lmd4MkkidwhHbDBoWADf8WgPAD5QOUVivWpBm7YPazoHmf014IfAOrQpe0LB~DwDg21e4VuUXL6Sq62VYHFsD5sgUEcrn~foRcRM2sl69IYfFGZfwZ3fu8RJfmAPl24Y~gKJ7AaMkvaN2UgIlIsigB8r5vujAwfg-2P8vy6T1~5tM4X-wzLtNH74C~g9zjXO432STkWTWC1byVS57OdjIv2dLnADIL7-VWeuTYrhYpmXjALmuQbW4sg~2HRHpgiu10x67sllp83RTfvz2MHGgLcA__"
+                                alt="" class="profile-img4">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Scarlett Johansson</div>
+                            <div class="position">Marketing Head, BrandX</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">A pleasure to work with.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/22d4/b2ea/b40669b4eb443a2e22a88cb9e1e2fb0f?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NQUjmU2a9Fu~4EX7qG~xsnM-4F0lBeqTDjxcIy-5Ewyb7Dxe8VljxZVr4qqgM6G34FfFOmpU3zsAYdxsU8mRxOhivEszsZkdFCPRd61mPEgL~ylHbJiRcjluAZQguastXa1yuY6L7s4x4OJ1q04NWvTCblHNqSCVR6Kn7j-vlZz~Xj9Vwh2fajWL3ZfpU1L-zoMHKzOezCKv9woWKREA6i-~vwbAxLI8vR7XwXwt0hCfGk-j2GnCSwdSXJKXlZP4BonxZqPeNIQx3ResztgElyIopeY6vE5j2lXddjtwXPg8DV3S98WtLxqD3iPjnRTpb52MtfGPQqKWOaG6-yv23Q__"
+                                alt="" class="profile-img5">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Mark Ruffalo</div>
+                            <div class="position">Product Manager, StartUp</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">Top-notch design skills.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="profile-container">
+                            <img src="https://s3-alpha-sig.figma.com/img/c533/38f2/5c49108108be8b9d81e7e84120f41624?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=onEhcbHqa1bLsc~2Pv7SRtt~tlzP9MbWs2Qx0S48BoeFkieXrgrTTG4mnsCx35pVXVhV8RGnX3m82U2-Yvp8gPQM3kW9vk8Nusm019u6BzLLVpQH~GzRAtYd7O0bN6bktBB4b7JhPnbwxHBlNuAjR-kolI3eob5gI3Ss~IxB7r5Ddz5RVmk02pVJBDDRAm8I7BWMRqamoQ3mCfgl239mvV9o1H4VSV9xD6ZuvTspESHaIavgR5QM7spxsNut~dztnb~YHFofpZz48UE6Xat7XWAweo6XFsyGNmDfXIGWztBLNGmSV1tgoHEuot4X8UX5z5CF1obgbrYKzwlQdt-aUg__"
+                                alt="" class="profile-img6">
+                        </div>
+                        <div class="text-container">
+                            <div class="name">Chris Hemsworth</div>
+                            <div class="position">COO, Enterprise Ltd.</div>
+                        </div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="line-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="72" viewBox="0 0 2 72" fill="none"
+                                class="line-svg">
+                                <path d="M1 0V72" stroke="#D6DDE6" stroke-opacity="0.2" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <div class="quote">Delivered on time and budget.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bleed"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2" viewBox="0 0 1440 2" fill="none"
+                class="testimonial-divider">
+                <path d="M-48 1H1488" stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+            </svg>
+        </div>
+        <div class="about-section">
+            <div class="about-text">I am a dedicated designer with a passion for creating captivating and functional
+                designs. My goal is to bring your vision to life through innovative and thoughtful design solutions.
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="text-content">
+                <div class="main-head">Get in Touch</div>
+                <div class="main-desc">Feel free to reach out for collaborations or just a friendly hello!</div>
+            </div>
+            <form action="" class="customer-form" id="contact">
+                <div class="name-input">
+                    <div class="input-standard">
+                        <label for="name"></label>
+                        <input type="name" id="name" placeholder="First Name">
+                    </div>
+                    <div class="input-standard">
+                        <label for="name"></label>
+                        <input type="name" id="name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="email-input">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="multiline-input">
+                    <label for="multiline"></label>
+                    <textarea name="multiline" id="multiline" placeholder="Placeholder"></textarea>
+                </div>
+                <div class="submit-button-input">
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" placeholder="Submit">
+                </div>
+            </form>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2" viewBox="0 0 1440 2" fill="none"
+                preserveAspectRatio="none" class="form-divider">
+                <path d="M-48 1H1488" stroke="white" stroke-opacity="0.2" stroke-width="1.5" />
+            </svg>
+        </div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="page-links">
+                <div class="page-links-text">© 2024 Ishan's Portfolio</div>
+            </div>
+            <div class="button-large">
+                <a class="button-text" href="#">Contact Me</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

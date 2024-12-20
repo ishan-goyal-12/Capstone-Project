@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    /* Enables smooth scrolling */
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     background-color: #080F17;
     color: #D6DDE6;
     overflow-x: hidden;
+    /* box-sizing: border-box; */
 }
 
 .header {
@@ -91,6 +93,24 @@ body {
     .header-side-name {
         font-size: 1.5rem;
         margin: 10px 0;
+    }
+}
+
+@media (max-width:480px){
+    .header-side{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: -1rem;
+        background-color: #080f17e4;
+        padding: 0.625rem;
+        border-radius: 8px;
+        transform: translateX(100%);
+    }
+
+    .hamburger-checkbox:checked~.header-side {
+        transform: translateX(0);
     }
 }
 
@@ -545,7 +565,6 @@ body {
 
 .customer-form {
     display: flex;
-    height: 20rem;
     max-width: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -563,6 +582,7 @@ body {
 
 .customer-form .name-input .input-standard {
     display: flex;
+    width: 40%;
     min-height: 2.75rem;
     padding: 0.75rem;
     align-items: center;
